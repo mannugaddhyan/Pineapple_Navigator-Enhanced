@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection
+  </p>
+  <table>
+		<tr>
+			<th> ID </th>
+            <th> Data Source </th>
+            <th> Data Component </th>
+            <th> Detects    </th>
+          </tr>
+            <tr>
+           <td>DS0017    </td>
+           <td>Command    </td>
+            <td> Command Execution   </td>
+           <td> Monitor executed commands and arguments for actions that could be taken to gather system and network information, such as nltest /domain_trusts. Remote access tools with built-in features may interact directly with the Windows API to gather information.   </td></tr>
+           <tr>
+           <td> DS0029   </td>
+           <td>Network Traffic    </td>
+            <td>Network Traffic Content    </td>
+           <td> Monitor and analyze traffic patterns and packet inspection associated to LDAP and MSRPC that do not follow the expected protocol standards and traffic flows (e.g extraneous packets that do not belong to established flows, gratuitous or anomalous traffic patterns, anomalous syntax, or structure).   </td></tr>
+          
+         <tr>
+           <td rowspan =2> DS0009   </td>
+           <td rowspan =2>Process    </td>
+           <td>OS API Execution    </td>
+           <td>Monitor for API calls associated with gathering information on domain trust relationships that may be used to identify lateral movement like DSEnumerateDomainTrusts() Win32 API call to spot activity associated with Domain Trust Discovery.[3] Information may also be acquired through Windows system management tools such as PowerShell. The .NET method GetAllTrustRelationships() can be an indicator of Domain Trust Discovery.    </td>  
+         </tr> 
+          <tr>
+           <td> Process Creation   </td>
+           <td>Monitor for newly executed processes that may attempt to gather information on domain trust relationships that may be used to identify lateral movement opportunities in Windows multi-domain/forest environments.    </td> </tr>
+          <tr>
+           <td>DS0012    </td>
+           <td>Script    </td>
+            <td> Script Execution   </td>
+           <td> Monitor for any attempts to enable scripts running on a system would be considered suspicious. If scripts are not commonly used on a system, but enabled, scripts running out of cycle from patching or other administrator functions are suspicious. Scripts should be captured from the file system when possible to determine their actions and intent.   </td></tr>
+          
+         </table>
+ 
+
+    
+</body>
+
+
+               
+</html>

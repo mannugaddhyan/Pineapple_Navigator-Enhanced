@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection
+  </p>
+  <table>
+		<tr>
+			<th> ID </th>
+            <th> Data Source </th>
+            <th> Data Component </th>
+            <th> Detects    </th>
+          </tr>
+         <tr>
+           <td rowspan =3>DS0029    </td>
+           <td rowspan =3>Network Traffic    </td>
+           <td> Network Connection Creation   </td>
+           <td>  Monitor for newly constructed network connections that are sent or received by untrusted hosts.  </td>  
+         </tr> 
+          <tr>
+           <td>	Network Traffic Content    </td>
+           <td> Monitor and analyze network packet contents to detect application layer protocols, leveraging SSL/TLS inspection for encrypted traffic, that do not follow the expected protocol standards and traffic flows (e.g extraneous packets that do not belong to established flows, protocol port mismatch, anomalous syntax, or structure). Consider packet inspection for Wake-on-LAN magic packet consists of 6 bytes of FF followed by sixteen repetitions of the target system's IEEE address. Seeing this string anywhere in a packet's payload may be indicative of a Wake-on-LAN attempt   </td> </tr>
+             <tr>
+           <td> Network Traffic Flow   </td>
+           <td> Monitor and analyze network flows associated to protocol(s) that do not follow the expected protocol standards and traffic flows (e.g extraneous packets that do not belong to established flows, or gratuitous or anomalous traffic patterns). Consider analyzing newly constructed network connections that are sent or received by untrusted hosts, unexpcted hardware devices, or other uncommon data flows.   </td> </tr>
+             <tr>
+           <td>DS0009    </td>
+           <td> Process   </td>
+           <td>Process Creation    </td>
+           <td>Identify running processes with raw sockets. Ensure processes listed have a need for an open raw socket and are in accordance with enterprise policy    </td></tr>
+          
+          
+         </table>
+ 
+
+    
+</body>
+
+
+               
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection
+  </p>
+  <table>
+		<tr>
+			<th> ID </th>
+            <th> Data Source </th>
+            <th> Data Component </th>
+            <th> Detects    </th>
+          </tr>
+         <tr>
+           <td> DS0017   </td>
+           <td> Command   </td>
+           <td>Command Execution    </td>
+           <td>Monitor executed commands and arguments for actions that could be taken to collect files from a network share. Remote access tools with built-in features may interact directly with the Windows API to gather and copy to a location. Data may also be acquired and staged through Windows system management tools such as Windows Management Instrumentation and PowerShell.    </td>  
+         </tr> 
+          <tr>
+           <td> DS0022   </td>
+           <td>  File  </td>
+           <td> File Access   </td>
+           <td>  Monitor for unexpected files (i.e. .pdf, .docx, .jpg, etc.) interacting with network shares.  </td>  
+         </tr> 
+          <tr>
+           <td> DS0033  </td>
+           <td> Network Share   </td>
+           <td> Network Share Access   </td>
+           <td> Monitor for unexpected and abnormal accesses to network shares.  </td>  
+         </tr> 
+          <tr>
+           <td rowspan =2> DS0029   </td>
+           <td rowspan =2> Network Traffic   </td>
+           <td> Network Connection Creation   </td> 
+           <td>  Monitor for newly constructed network connections that may search network shares on computers they have compromised to find files of interest  </td>
+         </tr> 
+          <tr>
+           <td>  Network Traffic Content  </td>
+           <td> Monitor and analyze traffic patterns and packet inspection associated to protocol(s) that do not follow the expected protocol standards and traffic flows (e.g extraneous packets that do not belong to established flows, gratuitous or anomalous traffic patterns, anomalous syntax, or structure). Consider correlation with process monitoring and command line to detect anomalous processes execution and command line arguments associated to traffic patterns (e.g. monitor anomalies in use of files that do not normally initiate connections for respective protocol(s)).   </td> </tr>
+          
+          
+          
+         </table>
+
+    
+</body>
+
+
+               
+</html>

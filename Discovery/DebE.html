@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection
+  </p>
+
+  <table>
+		<tr>
+			<th> ID </th>
+            <th> Data Source </th>
+            <th> Data Component </th>
+            <th> Detects    </th>
+          </tr>
+            </tr> 
+          <tr>
+           <td>DS0015    </td>
+           <td> Application Log   </td>
+           <td> Application Log Content   </td>
+           <td> Monitor debugger logs for signs of abnormal and potentially malicious activity.   </td></tr>
+            <tr>
+           <td> DS0017   </td>
+           <td> Command   </td>
+           <td> Command Execution   </td>
+           <td> Monitor executed commands and arguments that may employ various means to detect and avoid debugged environments. Detecting actions related to debugger identification may be difficult depending on the adversary's implementation and monitoring required.   </td></tr>
+         <tr>
+           <td rowspan =2> DS0009   </td>
+           <td rowspan =2>  Process  </td>
+           <td> OS API Execution   </td>
+           <td> Monitor for API calls (such as IsDebuggerPresent()) that may employ various means to detect and avoid debugged environments. Detecting actions related to debugger identification may be difficult depending on the adversary's implementation and monitoring required.   </td>  
+         </tr> 
+          <tr>
+           <td> Process Creation   </td>
+           <td>  Monitoring for suspicious processes being spawned that gather a variety of system information or perform other forms of Discovery, especially in a short period of time, may aid in detection. Debugger related system checks will likely occur in the first steps of an operation but may also occur throughout as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as lateral movement, based on the information obtained.  </td> </tr>
+          
+          
+         </table>
+
+    
+</body>
+
+
+               
+</html>

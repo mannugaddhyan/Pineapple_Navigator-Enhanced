@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection
+  </p>
+  <table>
+		<tr>
+			<th> ID </th>
+            <th> Data Source </th>
+            <th> Data Component </th>
+            <th> Detects    </th>
+          </tr>
+         <tr>
+           <td> DS0017   </td>
+           <td>  Command  </td>
+           <td> Command Execution  </td>
+           <td> Monitor executed commands and arguments that may search and collect local system sources, such as file systems or local databases, to find files of interest and sensitive data prior to Exfiltration. Remote access tools with built-in features may interact directly with the Windows API to gather data. Data may also be acquired through Windows system management tools such as Windows Management Instrumentation and PowerShell.
+For network devices, monitor executed commands in AAA logs, especially those run by unexpected or unauthorized users.
+   </td>  
+         </tr> 
+         <tr>
+           <td>DS0022   </td>
+           <td> File   </td>
+           <td> File Access   </td>
+           <td> Monitor for unexpected/abnormal access to files that may be malicious collection of local data, such as user files (pdf, .docx, .jpg, etc.) or local databases.   </td>  
+         </tr> 
+         <tr>
+           <td rowspan=2> DS0009   </td>
+           <td rowspan =2> Process   </td>
+           <td> OS API Execution   </td>
+           <td> Monitor for API calls that may search local system sources, such as file systems or local databases, to find files of interest and sensitive data prior to Exfiltration.   </td>  
+         </tr> 
+         <tr>
+           <td> Process Creation   </td>
+           <td>  Monitor for newly executed processes that may search local system sources, such as file systems or local databases, to find files of interest and sensitive data prior to Exfiltration.  </td> </tr>
+         <tr>
+           <td> DS0012   </td>
+           <td> Script   </td>
+           <td> Script Execution   </td>
+           <td>  Monitor for any attempts to enable scripts running on a system would be considered suspicious. If scripts are not commonly used on a system, but enabled, scripts running out of cycle from patching or other administrator functions are suspicious. Scripts should be captured from the file system when possible to determine their actions and intent. Data may also be acquired through Windows system management tools such as Windows Management Instrumentation and PowerShell.  </td>  
+         </tr> 
+          
+          
+          
+         </table>
+ 
+
+    
+</body>
+
+
+               
+</html>

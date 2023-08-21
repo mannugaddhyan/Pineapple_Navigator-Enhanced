@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection</p>
+  <table id="table1">
+    <tr id="tr1">
+      <th id="th1">ID</th>
+      <th id="th1">Data Source</th>
+      <th id="th1">Data Component</th>
+      <th id="th1">Detects</th>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0017</td>
+      <td id="td1">Command</td>
+      <td id="td1">Command Execution</td>
+      <td id="td1">While detecting adversaries accessing credentials may be difficult without knowing they exist in the environment, it may be possible to detect adversary use of credentials they have obtained. Monitor the command-line arguments of executing processes for suspicious words or regular expressions that may indicate searching for a password (for example: password, pwd, login, secure, or credentials). See Valid Accounts for more information.</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0022</td>
+      <td id="td1">File</td>
+      <td id="td1">File Access</td>
+      <td id="td1">	
+Monitor for suspicious file access activity, specifically indications that a process is reading multiple files in a short amount of time and/or using command-line arguments indicative of searching for credential material (ex: regex patterns). These may be indicators of automated/scripted credential access behavior. Monitoring when the user's .bash_history is read can help alert to suspicious activity. While users do typically rely on their history of commands, they often access this history through other utilities like "history" instead of commands like cat ~/.bash_history.</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0009</td>
+      <td id="td1">Process</td>
+      <td id="td1">Process Creation</td>
+      <td id="td1">Monitor newly executed processes that may search compromised systems to find and obtain insecurely stored credentials</td>
+    </tr>
+<tr id="tr1">
+      <td id="td1">DS0002</td>
+      <td id="td1">User Account</td>
+      <td id="td1">User Account Authentication</td>
+      <td id="td1">Monitor for an attempt by a user to gain access to a network or computing resource, often by providing credentials that may search compromised systems to find and obtain insecurely stored credentials.</td>
+    </tr>
+  </table>
+
+    
+</body>
+
+
+               
+</html>

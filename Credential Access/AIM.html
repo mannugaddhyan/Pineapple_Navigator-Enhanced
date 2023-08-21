@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection</p>
+  <table id="table1">
+    <tr id="tr1">
+      <th id="th1">ID</th>
+      <th id="th1">Data Source</th>
+      <th id="th1">Data Component</th>
+      <th id="th1">Detects</th>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0015</td>
+      <td id="td1">Application Log</td>
+      <td id="td1">Application Log Content</td>
+      <td id="td1">Monitor application logs for changes to settings and other events associated with network protocols and other services commonly abused for AiTM.[12]</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0029</td>
+      <td id="td1">Network Traffic</td>
+      <td id="td1">Network Traffic Flow</td>
+      <td id="td1">Monitor for network traffic originating from unknown/unexpected hardware devices. Local network traffic metadata (such as source MAC addressing) as well as usage of network management protocols such as DHCP may be helpful in identifying hardware.</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0019</td>
+      <td id="td1">Service</td>
+      <td id="td1">Service Creation</td>
+      <td id="td1">Monitor for newly constructed services/daemons through Windows event logs for event IDs 4697 and 7045. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as remote logins or process creation events.</td>
+    </tr>
+ <tr id="tr1">
+      <td id="td1">DS0024</td>
+      <td id="td1">Windows Registry</td>
+      <td id="td1">Windows Registry Key Modification</td>
+      <td id="td1">Monitor HKLM\Software\Policies\Microsoft\Windows NT\DNSClient for changes to the "EnableMulticast" DWORD value. A value of "0" indicates LLMNR is disabled.</td>
+</tr>
+  </table>
+
+    
+</body>
+
+
+               
+</html>

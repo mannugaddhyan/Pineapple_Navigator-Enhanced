@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection</p>
+
+  <table id="table1">
+    <tr id="tr1">
+      <th id="th1">ID</th>
+      <th id="th1">Data Source</th>
+      <th id="th1">Data Component</th>
+      <th id="th1">Detects</th>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0028</td>
+      <td id="td1">Logon Session</td>
+      <td id="td1">Logon Session Creation</td>
+      <td id="td1">Monitor for anomalous authentication activity, such as logons or other user session activity associated with unknown accounts and/or using SAML tokens which do not have corresponding 4769 and 1200 events in the domain.[6]. Monitor for unexpected and abnormal access to resources, including access of websites and cloud-based applications by the same user in different locations or by different systems that do not match expected configurations. These logins may occur on any on-premises resources as well as from any cloud environment that trusts the credentials.[4]</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0006</td>
+      <td id="td1">Web Credential</td>
+      <td id="td1">Web Credential Creation</td>
+      <td id="td1">	
+Monitor for creation of access tokens using SAML tokens which do not have corresponding 4769 and 1200 events in the domain.[6]</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0006</td>
+      <td id="td1">Web Credential</td>
+      <td id="td1">Web Credential Usage</td>
+      <td id="td1">Monitor for the use of Access Tokens to access services such as Email that were created using SAML tokens which do not have corresponding 1202 events in the domain.[6]</td>
+    </tr>
+  </table>
+    
+</body>
+
+
+               
+</html>

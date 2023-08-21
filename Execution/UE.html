@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection</p>
+  <table>
+		<tr>
+			<th> ID </th>
+            <th> Data Source </th>
+            <th> Data Component </th>
+            <th> Detects    </th>
+          </tr>
+         <tr>
+           <td > DS0015   </td>
+           <td > Application Log   </td>
+           <td>Application Log Content    </td>
+           <td> Monitor for third-party application logging, messaging, and/or other artifacts that may rely upon specific actions by a user in order to gain execution.   </td>  
+         </tr> 
+          <tr>
+          <td>DS0017    </td>
+           <td> Command   </td> 
+           <td> Command Execution   </td>
+           <td> Monitor the execution of and command-line arguments for applications that may be used by an adversary to gain Initial Access that require user interaction. This includes compression applications, such as those for zip files, that can be used to Deobfuscate/Decode Files or Information in payloads.   </td> </tr>
+           <tr>
+           <td rowspan =2>DS0032    </td>
+           <td rowspan=2>Container    </td>
+           <td>  	Container Creation   </td>
+           <td> Monitor for newly constructed containers that may use an existing, legitimate external Web service to exfiltrate data rather than their primary command and control channel.   </td>  
+         </tr> 
+         </tr> 
+          <tr>
+          <td>Container Start    </td>
+           <td> Monitor for the activation or invocation of a container (ex: docker start or docker restart)   </td></tr>
+          <tr>
+          <td>  DS0022  </td>
+           <td> File   </td> 
+           <td>File Creation    </td>
+           <td>Anti-virus can potentially detect malicious documents and files that are downloaded and executed on the user's computer. Endpoint sensing or network sensing can potentially detect malicious events once the file is opened (such as a Microsoft Word document or PDF reaching out to the internet or spawning powershell.exe).    </td> </tr>
+           <tr>
+           <td > DS0007   </td>
+           <td > Image   </td>
+           <td> Image Creation   </td>
+           <td> Monitor for newly constructed image that may use an existing, legitimate external Web service to exfiltrate data rather than their primary command and control channel.   </td>  
+         </tr> 
+          <tr>
+          <td rowspan =2> DS0030   </td>
+           <td rowspan =2>Instance    </td> 
+           <td>  Instance Creation  </td>
+           <td> Monitor for newly constructed instances that may use an existing, legitimate external Web service to exfiltrate data rather than their primary command and control channel.   </td> </tr>
+            <tr>
+           <td >   	Instance Start  </td>
+           <td > Monitor for the activation or invocation of an instance (ex: instance.start within GCP Audit Logs)   </td></tr>
+           <tr>
+           <td rowspan =2> DS0029   </td>
+           <td rowspan =2> Network Traffic   </td>
+           <td> Network Connection Creation   </td>
+           <td> Monitor for newly constructed web-based network connections that are sent to malicious or suspicious destinations (e.g. destinations attributed to phishing campaigns). Consider correlation with process monitoring and command line to detect anomalous processes execution and command line arguments (e.g. monitor anomalies in use of files that do not normally initiate network connections or unusual connections initiated by regsvr32.exe, rundll.exe, .SCF, HTA, MSI, DLLs, or msiexec.exe).   </td>  
+         </tr> 
+         <tr>
+           <td > Network Traffic Content   </td>
+           <td > Monitor and analyze traffic patterns and packet inspection associated with web-based network connections that are sent to malicious or suspicious detinations (e.g. destinations attributed to phishing campaigns). Consider correlation with process monitoring and command line to detect anomalous processes execution and command line arguments (e.g. monitor anomalies in use of files that do not normally initiate network connections or unusual connections initiated by regsvr32.exe, rundll.exe, .SCF, HTA, MSI, DLLs, or msiexec.exe).   </td></tr>
+          
+          <tr>
+          <td> DS0009   </td>
+           <td> Process   </td> 
+           <td> Process Creation   </td>
+           <td>Monitor for newly executed processes that may be used by an adversary to gain Initial Access that require user interaction. This includes compression applications, such as those for zip files, that can be used to Deobfuscate/Decode Files or Information in payloads.    </td> </tr>
+          
+          
+         </table>
+
+    
+</body>
+
+
+               
+</html>

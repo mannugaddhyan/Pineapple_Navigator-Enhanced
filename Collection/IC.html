@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection
+  </p>
+  <table>
+		<tr>
+			<th> ID </th>
+            <th> Data Source </th>
+            <th> Data Component </th>
+            <th> Detects    </th>
+          </tr>
+         <tr>
+           <td>  DS0027  </td>
+           <td> Driver   </td>
+           <td> Driver Load   </td>
+           <td> Monitor for unusual kernel driver installation activity   </td>  
+         </tr> 
+          <tr>
+           <td> DS0022   </td>
+           <td>  File  </td>
+           <td> File Modification   </td>
+           <td>  Monitor for changes made to files for unexpected modifications to access permissions and attributes  </td>  
+         </tr> 
+          <tr>
+           <td rowspan =3>  DS0009  </td>
+           <td rowspan =3> Process   </td>
+           <td>  OS API Execution  </td>
+           <td>  Monitor for API calls to SetWindowsHook, GetKeyState, and GetAsyncKeyState  </td>  
+         </tr> 
+         <tr>
+           <td> Process Creation   </td>
+           <td>  Monitor for newly executed processes conducting malicious activity  </td>
+           </tr>
+            <tr>
+           <td> Process Metadata   </td>
+           <td>  Verify integrity of live processes by comparing code in memory to that of corresponding static binaries, specifically checking for jumps and other instructions that redirect code flow.  </td> </tr>
+          <tr>
+           <td> DS0024   </td>
+           <td>  Windows Registry  </td>
+           <td> Windows Registry Key Modification   </td>
+           <td> Monitor for changes made to windows registry keys or values for unexpected modifications   </td>  
+         </tr> 
+          
+          
+          
+         </table>
+
+
+    
+</body>
+
+
+               
+</html>

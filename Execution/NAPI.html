@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection</p>
+  <table id="table1">
+		<tr id="tr1">
+			<tdh id="th1"> ID </th>
+            <tdh id="th1"> Data Source </th>
+            <tdh id="th1"> Data Component </th>
+            <tdh id="th1"> Detects    </th>
+          </tr>
+         <tr id="tr1">
+           <td > DS0011   </td>
+           <td > Module   </td>
+           <td id="td1"> Module Load   </td>
+           <td id="td1">Monitor DLL/PE file events, specifically creation of these binary files as well as the loading of DLLs into processes. Utilization of the Windows APIs may involve processes loading/accessing system DLLs associated with providing called functions (ex: ntdll.dll, kernel32.dll, advapi32.dll, user32.dll, and gdi32.dll). Monitoring for DLL loads, especially to abnormal/unusual or potentially malicious processes, may indicate abuse of the Windows API. Though noisy, this data can be combined with other indicators to identify adversary activity.    </td>  
+         </tr> 
+          <tr id="tr1">
+          <td id="td1"> DS0009   </td>
+           <td id="td1">Process    </td> 
+           <td id="td1"> OS API Execution   </td>
+           <td id="td1"> Monitoring API calls may generate a significant amount of data and may not be useful for defense unless collected under specific circumstances, since benign use of API functions are common and may be difficult to distinguish from malicious behavior. Correlation of other events with behavior surrounding API function calls using API monitoring will provide additional context to an event that may assist in determining if it is due to malicious behavior. Correlation of activity by process lineage by process ID may be sufficient.   </td> </tr>
+          
+          
+         </table>
+
+    
+</body>
+
+
+               
+</html>

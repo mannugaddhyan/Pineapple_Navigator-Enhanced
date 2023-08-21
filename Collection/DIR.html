@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection
+  </p>
+  <table>
+		<tr>
+			<th> ID </th>
+            <th> Data Source </th>
+            <th> Data Component </th>
+            <th> Detects    </th>
+          </tr>
+         <tr>
+           <td> DS0015   </td>
+           <td>Application Log   </td>
+           <td>Application Log Content    </td>
+           <td>   Monitor for third-party application logging, messaging, and/or other artifacts that may leverage information repositories to mine valuable information. Information repositories generally have a considerably large user base, detection of malicious use can be non-trivial. At minimum, access to information repositories performed by privileged users (for example, Active Directory Domain, Enterprise, or Schema Administrators) should be closely monitored and alerted upon, as these types of accounts should generally not be used to access information repositories. If the capability exists, it may be of value to monitor and alert on users that are retrieving and viewing a large number of documents and pages; this behavior may be indicative of programmatic means being used to retrieve all data within the repository. In environments with high-maturity, it may be possible to leverage User-Behavioral Analytics (UBA) platforms to detect and alert on user based anomalies. </td>  
+         </tr> 
+          
+          <tr>
+           <td>DS0028    </td>
+           <td> Logon Session   </td>
+           <td>  Logon Session Creation  </td>
+           <td>  Monitor for newly constructed logon behavior within Microsoft's SharePoint can be configured to report access to certain pages and documents. [8] Sharepoint audit logging can also be configured to report when a user shares a resource. [9]The user access logging within Atlassian's Confluence can also be configured to report access to certain pages and documents through AccessLogFilter. [10] Additional log storage and analysis infrastructure will likely be required for more robust detection capabilities.  </td>  
+         </tr> 
+          
+         </table>
+
+
+    
+</body>
+
+
+               
+</html>

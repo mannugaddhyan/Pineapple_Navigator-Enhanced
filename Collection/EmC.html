@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection
+  </p>
+
+  <table id="t01">
+		<tr>
+			<th> ID </th>
+            <th> Data Source </th>
+            <th> Data Component </th>
+            <th> Detects    </th>
+          </tr>
+         <tr>
+           <td>  DS0015  </td>
+           <td>  Application Log  </td>
+           <td>  Application Log Content  </td>
+           <td>  Detection is challenging because all messages forwarded because of an auto-forwarding rule have the same presentation as a manually forwarded message. It is also possible for the user to not be aware of the addition of such an auto-forwarding rule and not suspect that their account has been compromised; email-forwarding rules alone will not affect the normal usage patterns or operations of the email account. Auto-forwarded messages generally contain specific detectable artifacts that may be present in the header; such artifacts would be platform-specific. Examples include X-MS-Exchange-Organization-AutoForwarded set to true, X-MailFwdBy and X-Forwarded-To. The forwardingSMTPAddress parameter used in a forwarding process that is managed by administrators and not by user actions. All messages for the mailbox are forwarded to the specified SMTP address. However, unlike typical client-side rules, the message does not appear as forwarded in the mailbox; it appears as if it were sent directly to the specified destination mailbox.[3] High volumes of emails that bear the X-MS-Exchange-Organization-AutoForwarded header (indicating auto-forwarding) without a corresponding number of emails that match the appearance of a forwarded message may indicate that further investigation is needed at the administrator level rather than user-level.  </td>  
+         </tr> 
+          <tr>
+           <td> DS0017   </td>
+           <td> Command   </td>
+           <td>  Command Execution  </td>
+           <td> Monitor executed processes and command-line arguments for actions that could be taken to gather local email files. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as Windows Management Instrumentation and PowerShell.   </td>  
+         </tr> 
+          <tr>
+           <td> DS0022   </td>
+           <td> File   </td>
+           <td> File Access   </td>
+           <td> Monitor for unusual processes access of local system email files for Exfiltration, unusual processes connecting to an email server within a network, or unusual access patterns or authentication attempts on a public-facing webmail server may all be indicators of malicious activity.   </td>  
+         </tr> 
+          <tr>
+           <td> DS0028   </td>
+           <td> Logon Session   </td>
+           <td> Logon Session Creation   </td>
+           <td> Monitor for unusual login activity from unknown or abnormal locations, especially for privileged accounts (ex: Exchange administrator account).   </td>  
+         </tr> 
+          <tr>
+           <td> DS0029   </td>
+           <td> Network Traffic   </td>
+           <td> Network Connection Creation   </td>
+           <td> Monitor for newly constructed network connections that are sent or received by untrusted hosts.   </td>  
+         </tr> 
+          
+          
+          
+         </table>
+
+    
+</body>
+
+
+               
+</html>

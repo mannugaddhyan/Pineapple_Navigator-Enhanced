@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection
+  </p>
+  <table>
+		<tr>
+			<th> ID </th>
+            <th> Data Source </th>
+            <th> Data Component </th>
+            <th> Detects    </th>
+          </tr>
+         <tr>
+           <td rowspan =2> DS0010   </td>
+           <td rowspan =2> Cloud Storage   </td>
+           <td> Cloud Storage Access  </td>
+           <td> Monitor for unusual queries to the cloud provider's storage service. Activity originating from unexpected sources may indicate improper permissions are set that is allowing access to data. Additionally, detecting failed attempts by a user for a certain object, followed by escalation of privileges by the same user, and access to the same object may be an indication of suspicious activity.   </td>  
+         </tr> 
+          <tr>
+           <td>  Cloud Storage Enumeration </td>
+           <td>  Monitor cloud logs for API calls used for file or object enumeration for unusual activity. System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as Collection and Exfiltration, based on the information obtained.  </td> </tr>
+          
+          
+         </table>
+
+
+    
+</body>
+
+
+               
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection
+  </p>
+  <table>
+		<tr>
+			<th> ID </th>
+            <th> Data Source </th>
+            <th> Data Component </th>
+            <th> Detects    </th>
+          </tr>
+         <tr>
+           <td> DS0022   </td>
+           <td> File   </td>
+           <td> File Creation </td>
+           <td> Monitor for file creation and files transferred into the network   </td>  
+         </tr>
+          <tr>
+           <td rowspan =3> DS0029   </td>
+           <td rowspan =3>  Network Traffic  </td>
+           <td>Network Connection Creation    </td>
+           <td> Monitor for newly constructed network connections that are sent or received by untrusted hosts or creating files on-system may be suspicious. Use of utilities, such as FTP, that does not normally occur may also be suspicious  </td>  
+         </tr>
+          <tr>
+           <td> Network Traffic Content   </td>
+           <td> Monitor network traffic content for files and other potentially malicious content, especially data coming in from abnormal/unknown domain and IPs.   </td> </tr>
+          <tr>
+           <td>Network Traffic Flow    </td>
+           <td>  Monitor network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious.  </td> </tr>
+          
+          
+         </table>
+ 
+
+    
+</body>
+
+
+               
+</html>
