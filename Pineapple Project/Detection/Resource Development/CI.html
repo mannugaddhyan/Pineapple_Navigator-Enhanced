@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection</p>
+
+  <table id="table1">
+    <tr id="tr1">
+      <th id="th1">ID</th>
+      <th id="th1">Data Source</th>
+      <th id="th1">Data Component</th>
+      <th id="th1">Detects</th>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0038</td>
+      <td id="td1">Domain Name
+
+      </td>
+      <td id="td1">Active DNS</td>
+      <td id="td1">Monitor for queried domain name system (DNS) registry data that may compromise third-party infrastructure that can be used during targeting. Detection efforts may be focused on related stages of the adversary lifecycle, such as during Command and Control.
+
+      </td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1"></td>
+      <td id="td1"></td>
+      <td id="td1">Domain Registration</td>
+      <td id="td1">Consider monitoring for anomalous changes to domain registrant information and/or domain resolution information that may indicate the compromise of a domain. Efforts may need to be tailored to specific domains of interest as benign registration and resolution changes are a common occurrence on the internet.</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1"></td>
+      <td id="td1"></td>
+      <td id="td1">Passive DNS</td>
+      <td id="td1">Monitor for logged domain name system (DNS) data that may compromise third-party infrastructure that can be used during targeting. Detection efforts may be focused on related stages of the adversary lifecycle, such as during Command and Control.
+
+      </td>
+    </tr>
+
+    <tr id="tr1">
+      <td id="td1">DS0035
+
+      </td>
+      <td id="td1">Internet Scan</td>
+      <td id="td1">Response Content
+
+      </td>
+      <td id="td1">Once adversaries have provisioned compromised infrastructure (ex: a server for use in command and control), internet scans may help proactively discover compromised infrastructure. Consider looking for identifiable patterns such as services listening, certificates in use, SSL/TLS negotiation features, or other response artifacts associated with adversary C2 software.</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1"></td>
+      <td id="td1"></td>
+      <td id="td1">Response Metadata
+
+      </td>
+      <td id="td1">Monitor for contextual data about an Internet-facing resource gathered from a scan, such as running services or ports that may compromise third-party infrastructure that can be used during targeting. Detection efforts may be focused on related stages of the adversary lifecycle, such as during Command and Control.
+
+      </td>
+    </tr>
+  </table>
+    
+</body>
+
+
+               
+</html>

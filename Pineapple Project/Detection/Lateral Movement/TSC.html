@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection
+  </p>
+  <table>
+		<tr>
+			<th> ID </th>
+            <th> Data Source </th>
+            <th> Data Component </th>
+            <th> Detects    </th>
+          </tr>
+         <tr>
+           <td rowspan =2> DS0022   </td>
+           <td rowspan =2>File    </td>
+           <td> File Creation   </td>
+           <td>Monitor for newly constructed files from files that write or overwrite many files to a network shared directory may be suspicious.    </td>  
+         </tr> 
+          <tr>
+           <td> File Modification   </td>
+           <td>Monitor for files that write or overwrite many files to a network shared directory may be suspicious.    </td> </tr>
+             <tr>
+           <td>DS0033    </td>
+           <td>Network Share    </td>
+           <td> Network Share Access   </td>
+            <td>Monitor for unexpected and abnormal accesses to network shares, especially those also associated with file activity.    </td>
+         </tr>
+          <tr>
+           <td>DS0009    </td>
+           <td> Process   </td>
+           <td> Process Creation   </td>
+            <td>Monitor processes that are executed from removable media for malicious or abnormal activity such as network connections due to Command and Control and possible network Discovery techniques.    </td>
+         </tr>
+          
+         </table>
+
+    
+</body>
+
+
+               
+</html>

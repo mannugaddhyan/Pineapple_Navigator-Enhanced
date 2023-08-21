@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection
+  </p>
+  <table>
+		<tr>
+			<th> ID </th>
+            <th> Data Source </th>
+            <th> Data Component </th>
+            <th> Detects    </th>
+          </tr>
+          <tr>
+           <td>DS0026    </td>
+           <td>Active Directory    </td>
+           <td>  Active Directory Object Access  </td>
+           <td> Monitor domain controller logs for replication requests and other unscheduled activity possibly associated with DCSync. [197] [198] [199] Note: Domain controllers may not log replication requests originating from the default domain controller account. [200]. Monitor for replication requests [201] from IPs not associated with known domain controllers.    </td></tr>
+           <tr>
+           <td> DS0017   </td>
+           <td> Command   </td>
+           <td> Command Execution   </td>
+           <td> Monitor executed commands and arguments that may attempt to dump credentials to obtain account login and credential material, normally in the form of a hash or a clear text password, from the operating system and software. Look for command-lines that invoke AuditD or the Security Accounts Manager (SAM). Remote access tools may contain built-in features or incorporate existing tools like Mimikatz. PowerShell scripts also exist that contain credential dumping functionality, such as PowerSploit's Invoke-Mimikatz module, [203] which may require additional logging features to be configured in the operating system to collect necessary information for analysis.   </td></tr>
+           <tr>
+           <td> DS0022   </td>
+           <td> File   </td>
+           <td>   File Access </td>
+           <td> Monitor for hash dumpers opening the Security Accounts Manager (SAM) on the local file system (%SystemRoot%/system32/config/SAM). Some hash dumpers will open the local file system as a device and parse to the SAM table to avoid file access defenses. Others will make an in-memory copy of the SAM table before reading hashes. Detection of compromised Valid Accounts in-use by adversaries may help as well.   </td></tr>
+         <tr>
+           <td rowspan =2> DS0029   </td>
+           <td rowspan =2>Network Traffic    </td>
+           <td>  Network Traffic Content  </td>
+           <td> Monitor and analyze traffic patterns and packet inspection associated to protocol(s) that do not follow the expected protocol standards and traffic flows (e.g extraneous packets that do not belong to established flows, gratuitous or anomalous traffic patterns, anomalous syntax, or structure). Consider correlation with process monitoring and command line to detect anomalous processes execution and command line arguments associated to traffic patterns (e.g. monitor anomalies in use of files that do not normally initiate connections for respective protocol(s)).   </td>  
+         </tr> 
+          <tr>
+           <td> Network Traffic Flow   </td>
+           <td> Monitor network data for uncommon data flows. Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious.   </td> </tr>
+           <tr>
+           <td rowspan =3> DS0009   </td>
+           <td rowspan =3> Process   </td>
+           <td> OS API Execution   </td>
+           <td> Monitor for API calls that may attempt to dump credentials to obtain account login and credential material, normally in the form of a hash or a clear text password, from the operating system and software.   </td>  
+         </tr> 
+          <tr>
+           <td> Process Access   </td>
+           <td>Monitor for unexpected processes interacting with lsass.exe.[204] Common credential dumpers such as Mimikatz access the LSA Subsystem Service (LSASS) process by opening the process, locating the LSA secrets key, and decrypting the sections in memory where credential details are stored. Credential dumpers may also use methods for reflective Process Injection to reduce potential indicators of malicious activity.
+Linux
+To obtain the passwords and hashes stored in memory, processes must open a maps file in the /proc filesystem for the process being analyzed. This file is stored under the path /proc/<pid>/maps, where the <pid> directory is the unique pid of the program being interrogated for such authentication data. The AuditD monitoring tool, which ships stock in many Linux distributions, can be used to watch for hostile processes opening this file in the proc file system, alerting on the pid, process name, and arguments of such programs.
+    </td> </tr>
+          <tr>
+           <td> Process Creation   </td>
+           <td> Monitor for newly executed processes that may be indicative of credential dumping. On Windows 8.1 and Windows Server 2012 R2, monitor Windows Logs for LSASS.exe creation to verify that LSASS started as a protected process.   </td> </tr>
+          <tr>
+          <tr>
+           <td> DS0024   </td>
+           <td> Windows Registry   </td>
+           <td> Windows Registry Key Access   </td>
+           <td> Monitor for the SAM registry key being accessed that may attempt to dump credentials to obtain account login and credential material, normally in the form of a hash or a clear text password, from the operating system and software.   </td></tr>
+          
+         </table>
+
+
+    
+</body>
+
+
+               
+</html>

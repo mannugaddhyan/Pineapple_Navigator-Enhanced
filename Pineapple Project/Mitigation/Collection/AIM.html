@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Mitigation
+  </p>
+	<table>
+    
+    
+    <tr>
+			<th>  ID  </th>
+            <th> Mitigation   </th>
+            <th> Description  </th> 
+            
+       </tr>
+          
+            <tr>
+           <td>  M1042  </td>
+           <td> Disable or Remove Feature or Program   </td>
+           <td> Disable legacy network protocols that may be used to intercept network traffic if applicable, especially those that are not needed within an environment   </td>
+         </tr> 
+   <tr>
+           <td> M1041   </td>
+           <td> Encrypt Sensitive Information   </td>
+           <td>Ensure that all wired and/or wireless traffic is encrypted appropriately. Use best practices for authentication protocols, such as Kerberos, and ensure web traffic that may contain credentials is protected by SSL/TLS.    </td>
+         </tr>
+                
+                
+                <tr>
+           <td> M1037   </td>
+           <td> Filter Network Traffic   </td>
+           <td>  Use network appliances and host-based security software to block network traffic that is not necessary within the environment, such as legacy protocols that may be leveraged for AiTM conditions.  </td>
+         </tr>
+                <tr>
+           <td> M1035   </td>
+           <td>   Limit Access to Resource Over Network </td>
+           <td> Limit access to network infrastructure and resources that can be used to reshape traffic or otherwise produce AiTM conditions.   </td>
+         </tr>
+                <tr>
+           <td>  M1031  </td>
+           <td>  Network Intrusion Prevention  </td>
+           <td> Network intrusion detection and prevention systems that can identify traffic patterns indicative of AiTM activity can be used to mitigate activity at the network level.   </td>
+         </tr>
+                <tr>
+           <td> M1030   </td>
+           <td> Network Segmentation   </td>
+           <td> Network segmentation can be used to isolate infrastructure components that do not require broad network access. This may mitigate, or at least alleviate, the scope of AiTM activity.   </td>
+         </tr>
+                <tr>
+           <td>  M1017  </td>
+           <td>  User Training  </td>
+           <td> Train users to be suspicious about certificate errors. Adversaries may use their own certificates in an attempt to intercept HTTPS traffic. Certificate errors may arise when the application’s certificate does not match the one expected by the host.   </td>
+         </tr>
+                
+                </table>
+
+    
+</body>
+
+
+               
+</html>

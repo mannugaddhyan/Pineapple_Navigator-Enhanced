@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Mitigation</p>
+
+  <table id="table1">
+    <tr id="tr1">
+      <th id="th1">ID</th>
+      <th id="th1">Mitigation</th>
+      <th id="th1">Description</th>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">M1015</td>
+      <td id="td1">Active Directory Configuration</td>
+      <td id="td1">Manage the access control list for "Replicating Directory Changes" and other permissions associated with domain controller replication.Consider adding users to the "Protected Users" Active Directory security group. This can help limit the caching of users' plaintext credentials.</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">M1040</td>
+      <td id="td1">Behavior Prevention on Endpoint</td>
+      <td id="td1">On Windows 10, enable Attack Surface Reduction (ASR) rules to secure LSASS and prevent credential stealing.</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">M1043</td>
+      <td id="td1">Credential Access Protection</td>
+      <td id="td1">With Windows 10, Microsoft implemented new protections called Credential Guard to protect the LSA secrets that can be used to obtain credentials through forms of credential dumping. It is not configured by default and has hardware and firmware system requirements. [22] It also does not protect against all forms of credential dumping. [23]</td>
+    </tr>
+  </table>
+    
+</body>
+
+
+               
+</html>

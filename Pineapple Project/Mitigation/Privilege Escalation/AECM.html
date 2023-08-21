@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Mitigation</p>
+
+  <table id="table1">
+    <tr id="tr1">
+      <th id="th1">ID</th>
+      <th id="th1">Mitigation</th>
+      <th id="th1">Description</th>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">M1047</td>
+      <td id="td1">Audit</td>
+      <td id="td1">Check for common UAC bypass weaknesses on Windows systems to be aware of the risk posture and address issues where appropriate.</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">M1038</td>
+      <td id="td1">Execution Prevention</td>
+      <td id="td1">System settings can prevent applications from running that haven't been downloaded from legitimate repositories which may help mitigate some of these issues. Not allowing unsigned applications from being run may also mitigate some risk.</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">M1028</td>
+      <td id="td1">OS Configuration</td>
+      <td id="td1">Applications with known vulnerabilities or known shell escapes should not have the setuid or setgid bits set to reduce potential damage if an application is compromised. Additionally, the number of programs with setuid or setgid bits set should be minimized across a system. Ensuring that the sudo tty_tickets setting is enabled will prevent this leakage across tty sessions.</td>
+    </tr>
+    <tr id="tr1">
+     <td id="td1">M1026</td>
+     <td id="td1">Privileged Account Management</td>
+     <td id="td1">Remove users from the local administrator group on systems. By requiring a password, even if an adversary can get terminal access, they must know the password to run anything in the sudoers file. Setting the timestamp_timeout to 0 will require the user to input their password every time sudo is executed.</td>
+   </tr>
+   <tr id="tr1">
+     <td id="td1">M1052</td>
+     <td id="td1">User Account Control</td>
+     <td id="td1">Although UAC bypass techniques exist, it is still prudent to use the highest enforcement level for UAC when possible and mitigate bypass opportunities that exist with techniques such as DLL Search Order Hijacking</td>
+   </tr>
+  </table>
+    
+</body>
+
+
+               
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection</p>
+
+  <table id="table1">
+    <tr id="tr1">
+      <th id="th1">ID</th>
+      <th id="th1">Data Source</th>
+      <th id="th1">Data Component</th>
+      <th id="th1">Detects</th>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0026</td>
+      <td id="td1">Active Directory</td>
+      <td id="td1">Active Directory Object Modification</td>
+      <td id="td1">Monitor for changes made to AD settings for unexpected modifications to user accounts, such as deletions or potentially malicious changes to user attributes (credentials, status, etc.).</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0002</td>
+      <td id="td1">User Account</td>
+      <td id="td1">User Account Deletion</td>
+      <td id="td1">Monitor for unexpected deletions of user accounts. Windows event logs may designate activity associated with an adversary's attempt to remove an account (ex: Event ID 4726 - A user account was deleted).</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1"></td>
+      <td id="td1"></td>
+      <td id="td1">User Account Modification</td>
+      <td id="td1">Monitor for changes made to user accounts for unexpected modification of properties, such as passwords or status (enabled/disabled). Windows event logs may designate activity associated with an adversary's attempt to remove access to an account:Event ID 4723 - An attempt was made to change an account's password Event</td>
+    </tr>
+  </table>
+    
+</body>
+
+
+               
+</html>

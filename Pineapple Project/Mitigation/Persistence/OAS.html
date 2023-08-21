@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Mitigation</p>
+  <table id="table1">
+    <tr id="tr1">
+      <th id="th1">ID</th>
+      <th id="th1">Mitigation</th>
+      <th id="th1">Description</th>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">M1040</td>
+      <td id="td1">Behavior Prevention on Endpoint</td>
+      <td id="td1">On Windows 10, enable Attack Surface Reduction (ASR) rules to prevent Office applications from creating child processes and from writing potentially malicious executable content to disk.  </td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">M1054</td>
+      <td id="td1">Software Configuration</td>
+      <td id="td1">For the Office Test method, create the Registry key used to execute it and set the permissions to "Read Control" to prevent easy access to the key without administrator permissions or requiring Privilege Escalation.  </td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">M1051</td>
+      <td id="td1">Update Software</td>
+      <td id="td1">For the Outlook methods, blocking macros may be ineffective as the Visual Basic engine used for these features is separate from the macro scripting engine.[9] Microsoft has released patches to try to address each issue. Ensure KB3191938 which blocks Outlook Visual Basic and displays a malicious code warning, KB4011091 which disables custom forms by default, and KB4011162 which removes the legacy Home Page feature, are applied to systems. </td>
+    </tr>
+  </table>
+
+    
+</body>
+
+
+               
+</html>

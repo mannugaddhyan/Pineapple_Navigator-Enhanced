@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Mitigation</p>
+  <table id="table1">
+    <tr id="tr1">
+      <th id="th1">ID</th>
+      <th id="th1">Mitigation</th>
+      <th id="th1">Description</th>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">M1047</td>
+      <td id="td1">Audit</td>
+      <td id="td1">	
+Review authentication logs to ensure that mechanisms such as enforcement of MFA are functioning as intended.
+
+Periodically review the hybrid identity solution in use for any discrepancies. For example, review all Pass Through Authentication (PTA) agents in the Azure Management Portal to identify any unwanted or unapproved ones.[4] If ADFS is in use, review DLLs and executable files in the AD FS and Global Assembly Cache directories to ensure that they are signed by Microsoft. Note that in some cases binaries may be catalog-signed, which may cause the file to appear unsigned when viewing file properties.[5]</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">M1032</td>
+      <td id="td1">Multi-factor Authentication</td>
+      <td id="td1">	
+Integrating multi-factor authentication (MFA) as part of organizational policy can greatly reduce the risk of an adversary gaining control of valid credentials that may be used for additional tactics such as initial access, lateral movement, and collecting information. MFA can also be used to restrict access to cloud resources and APIs.</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">M1028</td>
+      <td id="td1">Operating System Configuration</td>
+      <td id="td1">Ensure only valid password filters are registered. Filter DLLs must be present in Windows installation directory (C:\Windows\System32\ by default) of a domain controller and/or local computer with a corresponding entry in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\Notification Packages.</td>
+    </tr>
+  </table>
+
+    
+</body>
+
+
+               
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection
+  </p>
+  <table>
+		<tr>
+			<th> ID </th>
+            <th> Data Source </th>
+            <th> Data Component </th>
+            <th> Detects    </th>
+          </tr>
+         tr>
+           <td> DS0017   </td>
+           <td> Command   </td>
+           <td> Command Execution   </td>
+           <td> Monitor executed commands and arguments that may attempt to get detailed information about the operating system and hardware, including version, patches, hotfixes, service packs, and architecture. For network devices, monitor executed commands in AAA logs, especially those run by unexpected or unauthorized users.   </td></tr> 
+         <tr>
+           <td rowspan =2> DS0009   </td>
+           <td rowspan =2>Process    </td>
+           <td> OS API Execution   </td>
+           <td> Monitor for API calls that may attempt to get detailed information about the operating system and hardware, including version, patches, hotfixes, service packs, and architecture. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as Windows Management Instrumentation and PowerShell. In cloud-based systems, native logging can be used to identify access to certain APIs and dashboards that may contain system information. Depending on how the environment is used, that data alone may not be useful due to benign use during normal operations.   </td>  
+         </tr> 
+          <tr>
+           <td> Process Creation   </td>
+           <td>Monitor newly executed processes that may attempt to get detailed information about the operating system and hardware, including version, patches, hotfixes, service packs, and architecture.    </td> </tr>
+          
+          
+         </table>
+ 
+
+    
+</body>
+
+
+               
+</html>

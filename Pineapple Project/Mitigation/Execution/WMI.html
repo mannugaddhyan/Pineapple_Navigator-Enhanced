@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Mitigation
+  </p>
+  <table style="width:100%">
+    
+    
+    <tr>
+			<th>  ID  </th>
+            <th> Mitigation   </th>
+            <th> Description  </th> 
+            
+       </tr>
+           
+   <tr>
+           <td> M1040    </td>
+           <td> Behavior Prevention on Endpoint    </td>
+           <td> On Windows 10, enable Attack Surface Reduction (ASR) rules to block processes created by WMI commands from running. Note: many legitimate tools and applications utilize WMI for command execution.    </td>
+         </tr>
+         <tr>
+           <td> M1038    </td>
+           <td>Execution Prevention     </td>
+           <td>Use application control configured to block execution of wmic.exe if it is not required for a given system or network to prevent potential misuse by adversaries. For example, in Windows 10 and Windows Server 2016 and above, Windows Defender Application Control (WDAC) policy rules may be applied to block the wmic.exeapplication and to prevent abuse    </td>
+         </tr>
+         <tr>
+           <td> M1026    </td>
+           <td>Privileged Account Management    </td>
+           <td> Prevent credential overlap across systems of administrator and privileged accounts.    </td>
+         </tr>
+         <tr>
+           <td> M1018   </td>
+           <td>User Account Management </td>
+           <td>By default, only administrators are allowed to connect remotely using WMI. Restrict other users who are allowed to connect, or disallow all users to connect remotely to WMI.    </td>
+         </tr>
+                                </table>
+
+
+    
+</body>
+
+
+               
+</html>

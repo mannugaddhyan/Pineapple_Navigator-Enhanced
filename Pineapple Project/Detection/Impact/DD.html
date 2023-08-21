@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection</p>
+  <table id="table1">
+    <tr id="tr1">
+      <th id="th1">ID</th>
+      <th id="th1">Data Source</th>
+      <th id="th1">Data Component</th>
+      <th id="th1">Detects</th>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0010</td>
+      <td id="td1">Cloud Storage</td>
+      <td id="td1">Cloud Storage Deletion</td>
+      <td id="td1">Monitor for unexpected deletion of a cloud storage infrastructure, such as the DeleteDBCluster and DeleteGlobalCluster events in AWS, or a high quantity of data deletion events, such as DeleteBucket. Many of these events within a short period of time may indicate malicious activity.</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0017</td>
+      <td id="td1">Command</td>
+      <td id="td1">Command Execution</td>
+      <td id="td1">Monitor executed commands and arguments for binaries that could be involved in data destruction activity, such as SDelete.</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0022</td>
+      <td id="td1">File</td>
+      <td id="td1">File Deletion and Modification</td>
+      <td id="td1">Monitor for unexpected deletion to a file (ex: Sysmon EID 23).<br>Also, Monitor for changes made to a large quantity of files for unexpected modifications in user directories and under C:\Windows\System32.</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0007</td>
+      <td id="td1">Image</td>
+      <td id="td1">Image Deletion</td>
+      <td id="td1">Monitor for unexpected deletion of a virtual machine image (ex: Azure Compute Service Images DELETE)</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0030</td>
+      <td id="td1">Instance</td>
+      <td id="td1">Instance Deletion</td>
+      <td id="td1">Monitor for unexpected deletion of an instance (ex: instance.delete within GCP Audit Logs)</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0020</td>
+      <td id="td1">Snapshot</td>
+      <td id="td1">Snapshot Deletion</td>
+      <td id="td1">Monitor for unexpected deletion of a snapshot (ex: AWS delete-snapshot)</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0034</td>
+      <td id="td1">Volume</td>
+      <td id="td1">Volume Deletion</td>
+      <td id="td1">Monitor for unexpected deletion of a cloud volume (ex: AWS delete-volume)</td>
+    </tr>
+  </table>
+
+    
+</body>
+
+
+               
+</html>

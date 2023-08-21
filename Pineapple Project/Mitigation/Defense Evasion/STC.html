@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Mitigation</p>
+
+  <table id="table1">
+    <tr id="tr1">
+      <th id="th1">ID</th>
+      <th id="th1">Mitigation</th>
+      <th id="th1">Description</th>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">M1038</td>
+      <td id="td1">Execution Prevention</td>
+      <td id="td1">System settings can prevent applications from running that haven't been downloaded through the Apple Store (or other legitimate repositories) which can help mitigate some of these issues. Also enable application control solutions such as AppLocker and/or Device Guard to block the loading of malicious content.</td>
+    </tr>
+    <tr>
+      <td id="td1">M1028</td>
+      <td id="td1">Operating System Configuration</td>
+      <td id="td1">Windows Group Policy can be used to manage root certificates and the Flags value of HKLM\SOFTWARE\Policies\Microsoft\SystemCertificates\Root\ProtectedRoots can be set to 1 to prevent non-administrator users from making further root installations into their own HKCU certificate store.</td>
+    </tr>
+    
+  </table>
+    
+</body>
+
+
+               
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection
+  </p>
+  <table>
+		<tr>
+			<th> ID </th>
+            <th> Data Source </th>
+            <th> Data Component </th>
+            <th> Detects    </th>
+          </tr>
+           <tr>
+           <td> DS0017   </td>
+           <td> Command   </td>
+           <td>Command Execution    </td>
+           <td> Monitor executed commands and arguments for actions for abnormal usage of utilities and command-line arguments that may be used in support of remote transfer of files   </td>
+         </tr>
+         <tr>
+           <td rowspan =2> DS0022   </td>
+           <td rowspan =2> File   </td>
+           <td>File Creation    </td>
+           <td>Monitor newly constructed files to/from a lateral tool transfer    </td>  
+         </tr> 
+          <tr>
+           <td>File Metadata    </td>
+           <td> Monitor for alike file hashes or characteristics (ex: filename) that are created on multiple hosts.   </td> </tr>
+         <tr>
+           <td> DS0023   </td>
+           <td> Named Pipe   </td>
+           <td> Named Pipe Metadata   </td>
+           <td> Monitor for contextual data about named pipes on the system.   </td>
+         </tr>
+        <tr>
+           <td> DS0033   </td>
+           <td> Network Share   </td>
+           <td> Network Share Access   </td>
+           <td>  Monitor for unexpected network share access, such as files transferred between shares within a network using protocols such as SMB.  </td>
+         </tr>
+         <tr>
+           <td rowspan =2> DS0029   </td>
+           <td rowspan =2> Network Traffic   </td>
+           <td> Network Traffic Content   </td>
+           <td> Monitor for unusual processes with internal network connections creating files on-system may be suspicious   </td>  
+         </tr> 
+          <tr>
+           <td> Network Traffic Flow   </td>
+           <td>Monitor for network traffic originating from unknown/unexpected hardware devices. Local network traffic metadata (such as source MAC addressing) as well as usage of network management protocols such as DHCP may be helpful in identifying hardware.    </td> </tr>
+         <tr>
+         <tr>
+           <td> DS0009   </td>
+           <td> Process   </td>
+           <td> Process Creation </td>
+           <td> Monitor newly constructed processes that assist in lateral tool transfers.   </td>
+         </tr>
+          
+          
+         </table>
+
+    
+</body>
+
+
+               
+</html>

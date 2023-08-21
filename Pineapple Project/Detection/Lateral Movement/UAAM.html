@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection
+  </p>
+  <table id="t01">
+		<tr>
+			<th> ID </th>
+            <th> Data Source </th>
+            <th> Data Component </th>
+            <th> Detects    </th>
+          </tr>
+         <tr>
+           <td > DS0026   </td>
+           <td >Active Directory    </td>
+           <td>Active Directory Credential Request    </td>
+           <td>Monitor requests of new ticket granting ticket or service tickets to a Domain Controller, such as Windows EID 4769 or 4768, that may use alternate authentication material, such as password hashes, Kerberos tickets, and application access tokens, in order to move laterally within an environment and bypass normal system access controls.    </td>  
+         </tr> 
+          <tr>
+          <td> DS0015   </td>
+           <td>Application Log    </td> 
+           <td>Application Log Content    </td>
+           <td> Monitor for third-party application logging, messaging, and/or other artifacts that may use alternate authentication material, such as password hashes, Kerberos tickets, and application access tokens, in order to move laterally within an environment and bypass normal system access controls.   </td> </tr>
+         <tr>
+          <td> DS0028   </td>
+           <td>Logon Session    </td> 
+           <td> Logon Session Creation   </td>
+           <td> Look for suspicious account behavior across systems that share accounts, either user, admin, or service accounts. Examples: one account logged into multiple systems simultaneously; multiple accounts logged into the same machine simultaneously; accounts logged in at odd times or outside of business hours. Activity may be from interactive login sessions or process ownership from accounts being used to execute binaries on a remote system as a particular account.   </td> </tr>
+         <tr>
+          <td> DS0002   </td>
+           <td>User Account    </td> 
+           <td> User Account Authentication   </td>
+           <td>Monitor for an attempt by a user to gain access to a network or computing resource, often by providing credentials that may use alternate authentication material, such as password hashes, Kerberos tickets, and application access tokens, in order to move laterally within an environment and bypass normal system access controls.    </td> </tr>
+         <tr>
+          <td> DS0006   </td>
+           <td>Web Credential    </td> 
+           <td> Web Credential Usage</td>
+           <td> Monitor for an attempt by a user to gain access to a network or computing resource by providing web credentials (ex: Windows EID 1202) that may use alternate authentication material, such as password hashes, Kerberos tickets, and application access tokens, in order to move laterally within an environment and bypass normal system access controls.   </td> </tr>  
+          
+          
+         </table>
+
+    
+</body>
+
+
+               
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection
+  </p>
+  <table>
+		<tr>
+			<th> ID </th>
+            <th> Data Source </th>
+            <th> Data Component </th>
+            <th> Detects    </th>
+          </tr>
+         <tr>
+           <td > DS0026   </td>
+           <td > Active Directory   </td>
+           <td>  Active Directory Object Access  </td>
+           <td> Monitor for abnormal LDAP queries with filters for groupPolicyContainer and high volumes of LDAP traffic to domain controllers. Windows Event ID 4661 can also be used to detect when a directory service has been accessed.   </td>  
+         </tr> 
+          <tr>
+          <td> DS0017   </td>
+           <td>Command    </td> 
+           <td> Command Execution   </td>
+           <td> Monitor for suspicious use of gpresult. Monitor for the use of PowerShell functions such as Get-DomainGPO and Get-DomainGPOLocalGroup and processes spawning with command-line arguments containing GPOLocalGroup.   </td> </tr>
+       <tr>
+           <td >  DS0029  </td>
+           <td >  Network Traffic  </td>
+           <td> Network Traffic Content   </td>
+           <td>Monitor and analyze traffic patterns and packet inspection associated to protocol(s) that do not follow the expected protocol standards and traffic flows (e.g extraneous packets that do not belong to established flows, gratuitous or anomalous traffic patterns, anomalous syntax, or structure). Consider correlation with process monitoring and command line to detect anomalous processes execution and command line arguments associated to traffic patterns (e.g. monitor anomalies in use of files that do not normally initiate connections for respective protocol(s)).    </td>  
+         </tr> 
+          <tr>
+          <td> DS0009   </td>
+           <td> Process   </td> 
+           <td>Process Creation    </td>
+           <td>Monitor for newly executed processes that may gather information on Group Policy settings to identify paths for privilege escalation, security measures applied within a domain, and to discover patterns in domain objects that can be manipulated or used to blend in the environment.    </td> </tr>    
+          
+         <tr>
+          <td> DS0012   </td>
+           <td> Script   </td> 
+           <td> Script Execution   </td>
+           <td>Monitor for any attempts to enable scripts running on a system would be considered suspicious. If scripts are not commonly used on a system, but enabled, scripts running out of cycle from patching or other administrator functions are suspicious. Scripts should be captured from the file system when possible to determine their actions and intent.    </td> </tr>    
+            
+          
+         </table>
+ 
+
+    
+</body>
+
+
+               
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection</p>
+
+  <table id="table1">
+    <tr id="tr1">
+      <th id="th1">ID</th>
+      <th id="th1">Data Source</th>
+      <th id="th1">Data Component</th>
+      <th id="th1">Detects</th>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0022</td>
+      <td id="td1">File</td>
+      <td id="td1">File Metadata</td>
+      <td id="td1">Monitor for contextual data about a file, which may include information such as name, the content (ex: signature, headers, or data/media), user/ower, permissions, etc.</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1"></td>
+      <td id="td1"></td>
+      <td id="td1">File Modification</td>
+      <td id="td1">Monitor for changes made to files that may inject code into processes in order to evade process-based defenses as well as possibly elevate privileges.</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0011</td>
+      <td id="td1">Module</td>
+      <td id="td1">Module Load</td>
+      <td id="td1">Monitor DLL/PE file events, specifically creation of these binary files as well as the loading of DLLs into processes. Look for DLLs that are not recognized or not normally loaded into a process.</td>
+    </tr>
+    <tr id="tr1">
+        <td id="td1">DS0009</td>
+        <td id="td1">Process</td>
+        <td id="td1">OS API Execution</td>
+        <td id="td1">Monitoring Windows API calls indicative of the various types of code injection may generate a significant amount of data and may not be directly useful for defense unless collected under specific circumstances for known bad sequences of calls, since benign use of API functions may be common and difficult to distinguish from malicious behavior. Windows API calls such as CreateRemoteThread, SuspendThread/SetThreadContext/ResumeThread, QueueUserAPC/NtQueueApcThread, and those that can be used to modify memory within another process, such as VirtualAllocEx/WriteProcessMemory, may be used for this technique</td>
+      </tr>
+      <tr id="tr1">
+        <td id="td1"></td>
+        <td id="td1"></td>
+        <td id="td1">Process Access and Modification</td>
+        <td id="td1">Monitor for processes being viewed that may inject code into processes in order to evade process-based defenses as well as possibly elevate privileges.<br> Also, Monitor for changes made to processes that may inject code into processes in order to evade process-based defenses as well as possibly elevate privileges.</td>
+      </tr>
+  </table>
+    
+</body>
+
+
+               
+</html>

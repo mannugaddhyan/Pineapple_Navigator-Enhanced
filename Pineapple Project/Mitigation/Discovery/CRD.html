@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Mitigation
+  </p>
+	<table>
+    
+    
+    <tr>
+			<th>  ID  </th>
+            <th> Mitigation   </th>
+            <th> Description   </th> 
+            
+       </tr>
+           
+   <tr>
+           <td> M1035   </td>
+           <td> Limit Access to Resource Over Network   </td>
+           <td>  Limit communications with the container service to local Unix sockets or remote access via SSH. Require secure port access to communicate with the APIs over TLS by disabling unauthenticated access to the Docker API and Kubernetes API Server.  </td>
+         </tr>
+         <tr>
+           <td> M1030   </td>
+           <td>  Network Segmentation  </td>
+           <td> Deny direct remote access to internal systems through the use of network proxies, gateways, and firewalls.  </td>
+         </tr>
+         <tr>
+           <td> M1018   </td>
+           <td>User Account Management   </td>
+           <td> Enforce the principle of least privilege by limiting dashboard visibility to only the required users.   </td>
+         </tr>
+                                </table>
+
+
+    
+</body>
+
+
+               
+</html>

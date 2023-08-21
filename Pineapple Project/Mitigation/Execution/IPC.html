@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Mitigation
+  </p>
+  <table id="table1">
+    
+    
+    <tr id="tr1">
+			<th id="th1">  ID  </th>
+            <th id="th1"> Mitigation   </th>
+            <th id="th1"> Description   </th> 
+            
+       </tr>
+           
+   <tr id="tr1">
+           <td id="td1"> M1013    </td>
+           <td id="td1">Application Developer Guidance     </td>
+           <td id="td1"> Enable the Hardened Runtime capability when developing applications. Do not include the com.apple.security.get-task-allow entitlement with the value set to any variation of true.   </td>
+         </tr>
+           <tr id="tr1">
+           <td id="td1"> M1040    </td>
+           <td id="td1">Behavior Prevention on Endpoint     </td>
+           <td id="td1">On Windows 10, enable Attack Surface Reduction (ASR) rules to prevent DDE attacks and spawning of child processes from Office programs.    </td>
+         </tr>
+        <tr id="tr1">
+           <td id="td1"> M1040    </td>
+           <td id="td1"> Behavior Prevention on Endpoint    </td>
+           <td id="td1">  On Windows 10, enable Attack Surface Reduction (ASR) rules to prevent DDE attacks and spawning of child processes from Office programs  </td>
+         </tr>
+           <tr id="tr1">
+           <td id="td1"> M1042    </td>
+           <td id="td1"> Disable or Remove Feature or Program    </td>
+           <td id="td1"> Registry keys specific to Microsoft Office feature control security can be set to disable automatic DDE/OLE execution.  Microsoft also created, and enabled by default, Registry keys to completely disable DDE execution in Word and Excel.   </td>
+         </tr>
+        <tr id="tr1">
+           <td id="td1"> M1026   </td>
+           <td id="td1">Privileged Account Management     </td>
+           <td id="td1">Modify Registry settings (directly or using Dcomcnfg.exe) in HKEY_LOCAL_MACHINE\\SOFTWARE\\Classes\\AppID\\{AppID_GUID} associated with the process-wide security of individual COM applications.
+
+Modify Registry settings (directly or using Dcomcnfg.exe) in HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Ole associated with system-wide security defaults for all COM applications that do no set their own process-wide security    </td>
+         </tr>
+           <tr id="tr1">
+           <td id="td1">M1054     </td>
+           <td id="td1">Software Configuration     </td>
+           <td id="td1"> Consider disabling embedded files in Office programs, such as OneNote, that do not work with Protected View   </td>
+         </tr> 
+                                     </table>
+
+
+    
+</body>
+
+
+               
+</html>

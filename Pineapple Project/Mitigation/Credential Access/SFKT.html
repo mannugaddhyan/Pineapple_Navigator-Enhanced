@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Mitigation</p>
+  <table id="table1">
+    <tr id="tr1">
+      <th id="th1">ID</th>
+      <th id="th1">Mitigation</th>
+      <th id="th1">Description</th>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">M1015</td>
+      <td id="td1">Active Directory Configuration</td>
+      <td id="td1">For containing the impact of a previously generated golden ticket, reset the built-in KRBTGT account password twice, which will invalidate any existing golden tickets that have been created with the KRBTGT hash and other Kerberos tickets derived from it. For each domain, change the KRBTGT account password once, force replication, and then change the password a second time. Consider rotating the KRBTGT account password every 180 days.[9]</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">M1041</td>
+      <td id="td1">Encrypt Sensitive Information</td>
+      <td id="td1">Enable AES Kerberos encryption (or another stronger encryption algorithm), rather than RC4, where possible.[10]</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">M1027</td>
+      <td id="td1">Password Policies</td>
+      <td id="td1">Ensure strong password length (ideally 25+ characters) and complexity for service accounts and that these passwords periodically expire.[10] Also consider using Group Managed Service Accounts or another third party product such as password vaulting.[10]</td>
+    </tr>
+  </table>
+
+    
+</body>
+
+
+               
+</html>

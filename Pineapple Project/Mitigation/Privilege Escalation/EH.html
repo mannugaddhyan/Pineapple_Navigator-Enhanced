@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Mitigation</p>
+
+  <table id="table1">
+    <tr id="tr1">
+      <th id="th1">ID</th>
+      <th id="th1">Mitigation</th>
+      <th id="th1">Description</th>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">M1048</td>
+      <td id="td1">Application Isolation and Sandboxing </td>
+      <td id="td1">Consider utilizing seccomp, seccomp-bpf, or a similar solution that restricts certain system calls such as mount. In Kubernetes environments, consider defining a Pod Security Policy that limits container access to host process namespaces, the host network, and the host file system</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">M1038</td>
+      <td id="td1">Execution Prevention</td>
+      <td id="td1">Use read-only containers, read-only file systems, and minimal images when possible to prevent the running of commands</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">M1026</td>
+      <td id="td1">Privileged Account Management</td>
+      <td id="td1">Ensure containers are not running as root by default and do not use unnecessary privileges or mounted components. In Kubernetes environments, consider defining a Pod Security Policy that prevents pods from running privileged containers</td>
+    </tr>
+  </table>
+    
+</body>
+
+
+               
+</html>

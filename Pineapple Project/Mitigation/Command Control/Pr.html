@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Mitigation
+  </p>
+	<table>
+    
+    
+    <tr>
+			<th>  ID  </th>
+            <th> Mitigation   </th>
+            <th> Description   </th> 
+            
+       </tr>
+           
+   <tr>
+           <td>M1037    </td>
+           <td>Filter Network Traffic    </td>
+           <td> Traffic to known anonymity networks and C2 infrastructure can be blocked through the use of network allow and block lists. It should be noted that this kind of blocking may be circumvented by other techniques like Domain Fronting   </td>
+         </tr>
+         <tr>
+           <td> M1031   </td>
+           <td> Network Intrusion Prevention   </td>
+           <td> Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate activity at the network level. Signatures are often for unique indicators within protocols and may be based on the specific C2 protocol used by a particular adversary or tool, and will likely be different across various malware families and versions. Adversaries will likely change tool C2 signatures over time or construct protocols in such a way as to avoid detection by common defensive tools   </td>
+         </tr>
+         <tr>
+           <td>M1020    </td>
+           <td>SSL/TLS Inspection    </td>
+           <td> If it is possible to inspect HTTPS traffic, the captures can be analyzed for connections that appear to be domain fronting.   </td>
+         </tr>
+                                </table>
+ 
+
+    
+</body>
+
+
+               
+</html>

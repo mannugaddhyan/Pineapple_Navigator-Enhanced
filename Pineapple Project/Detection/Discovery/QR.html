@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection
+  </p>
+  <table>
+		<tr>
+			<th> ID </th>
+            <th> Data Source </th>
+            <th> Data Component </th>
+            <th> Detects    </th>
+          </tr>
+           <tr>
+           <td> DS0017   </td>
+           <td> Command   </td>
+             <td>Command Execution    </td>
+           <td> Monitor executed commands and arguments for actions that may interact with the Windows Registry to gather information about the system, configuration, and installed software.   </td></tr>
+         <tr>
+           <td rowspan =2>DS0009    </td>
+           <td rowspan =2>Process    </td>
+           <td> OS API Execution   </td>
+           <td> Monitor for API calls (such as RegOpenKeyExA) that may interact with the Windows Registry to gather information about the system, configuration, and installed software.   </td>  
+         </tr> 
+          <tr>
+           <td>Process Creation    </td>
+           <td>Monitor for newly executed processes that may interact with the Windows Registry to gather information about the system, configuration, and installed software.    </td> </tr>
+        <tr>
+           <td> DS0024   </td>
+           <td>Windows Registry</td>
+            <td> Windows Registry Key Access   </td>
+           <td>Monitor for unexpected process interactions with the Windows Registry (i.e. reads) that may be related to gathering information.    </td></tr>   
+          
+          
+         </table>
+ 
+
+    
+</body>
+
+
+               
+</html>

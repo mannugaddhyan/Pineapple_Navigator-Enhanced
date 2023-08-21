@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection
+  </p>
+  <table>
+		<tr>
+			<th> ID </th>
+            <th> Data Source </th>
+            <th> Data Component </th>
+            <th> Detects    </th>
+          </tr>
+          <tr>
+           <td> DS0017   </td>
+           <td> Command   </td>
+           <td> Command Execution   </td>
+           <td>Monitor executed commands and arguments that may take control of preexisting sessions with remote services to move laterally in an environment.    </td></tr>
+          <tr>
+           <td>DS0028    </td>
+           <td>Logon Session    </td>
+           <td>Logon Session Creation    </td>
+           <td>Monitor for user accounts logged into systems they would not normally access or access patterns to multiple systems over a relatively short period of time.    </td></tr>  
+         <tr>
+           <td rowspan =2> DS0029   </td>
+           <td rowspan =2> Network Traffic   </td>
+           <td> Network Traffic Content   </td>
+           <td> Monitor and analyze traffic patterns and packet inspection associated to protocol(s), leveraging SSL/TLS inspection for encrypted traffic, that do not follow the expected protocol standards and traffic flows (e.g extraneous packets that do not belong to established flows, gratuitous or anomalous traffic patterns, anomalous syntax, or structure). Consider correlation with process monitoring and command line to detect anomalous processes execution and command line arguments associated to traffic patterns (e.g. monitor anomalies in use of files that do not normally initiate connections for respective protocol(s)).   </td>  
+         </tr> 
+          <tr>
+           <td> Network Traffic Flow   </td>
+           <td>Monitor network data for uncommon data flows. Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious.    </td> </tr>
+          <tr>
+           <td> DS0009   </td>
+           <td> Process   </td>
+           <td>Process Creation    </td>
+           <td>Monitor newly executed processes that may take control of preexisting sessions with remote services to move laterally in an environment.    </td></tr>  
+          
+          
+         </table>
+
+    
+</body>
+
+
+               
+</html>

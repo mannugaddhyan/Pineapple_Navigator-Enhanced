@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Mitigation</p>
+
+  <table id="table1">
+    <tr id="tr1">
+      <th id="th1">ID</th>
+      <th id="th1">Mitigation</th>
+      <th id="th1">Description</th>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">M1047</td>
+      <td id="td1">Audit</td>
+      <td id="td1">	
+Administrators should audit all cloud and container accounts to ensure that they are necessary and that the permissions granted to them are appropriate. Additionally, administrators should perform an audit of all OAuth applications and the permissions they have been granted to access organizational data. This should be done extensively on all applications in order to establish a baseline, followed up on with periodic audits of new or updated applications. Suspicious applications should be investigated and removed.</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">M1021</td>
+      <td id="td1">Restrict Web-Based Content</td>
+      <td id="td1">Administrators can block end-user consent to OAuth applications, disabling users from authorizing third-party apps through OAuth 2.0 and forcing administrative consent for all requests. They can also block end-user registration of applications by their users, to reduce risk. A Cloud Access Security Broker can also be used to ban applications.
+
+Azure offers a couple of enterprise policy settings in the Azure Management Portal that may help:
+
+"Users -> User settings -> App registrations: Users can register applications" can be set to "no" to prevent users from registering new applications. "Enterprise applications -> User settings -> Enterprise applications: Users can consent to apps accessing company data on their behalf" can be set to "no" to prevent users from consenting to allow third-party multi-tenant applications</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">M1018</td>
+      <td id="td1">User Account Management</td>
+      <td id="td1">	
+Enforce role-based access control to limit accounts to the least privileges they require. A Cloud Access Security Broker (CASB) can be used to set usage policies and manage user permissions on cloud applications to prevent access to application access tokens. In Kubernetes applications, set "automountServiceAccountToken: false" in the YAML specification of pods that do not require access to service account tokens.[12]</td>
+    </tr>
+  </table>
+    
+</body>
+
+
+               
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+  <p>Detection</p>
+  <table id="table1">
+    <tr id="tr1">
+      <th id="th1">ID</th>
+      <th id="th1">Data Source</th>
+      <th id="th1">Data Component</th>
+      <th id="th1">Detects</th>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0017</td>
+      <td id="td1">Command</td>
+      <td id="td1">Command Execution</td>
+      <td id="td1">Command-line invocation of tools capable of modifying services may be unusual, depending on how systems are typically used in a particular environment. Look for abnormal process call trees from known services and for execution of other commands that could relate to Discovery or other adversary techniques.</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0027</td>
+      <td id="td1">Driver</td>
+      <td id="td1">Driver Load</td>
+      <td id="td1">Monitor for new service driver installations and loads (ex: Sysmon Event ID 6) that are not part of known software update/patch cycles.</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0022</td>
+      <td id="td1">File</td>
+      <td id="td1">File Creation</td>
+      <td id="td1">Monitor for newly constructed files that may create or modify system-level processes to repeatedly execute malicious payloads as part of persistence.</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1"></td>
+      <td id="td1"></td>
+      <td id="td1">File Modification</td>
+      <td id="td1">Monitor for changes to files associated with system-level processes.</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0009</td>
+      <td id="td1">Process</td>
+      <td id="td1">OS API Execution</td>
+      <td id="td1">Monitor for API calls that may create or modify system-level processes to repeatedly execute malicious payloads as part of persistence.</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1"></td>
+      <td id="td1"></td>
+      <td id="td1">Process Creation</td>
+      <td id="td1">New, benign system processes may be created during installation of new software.</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0019</td>
+      <td id="td1">Service</td>
+      <td id="td1">Service Creation</td>
+      <td id="td1">Monitor for newly constructed services/daemons that may create or modify system-level processes to repeatedly execute malicious payloads as part of persistence.</td>
+    </tr> 
+    <tr id="tr1">
+      <td id="td1"></td>
+      <td id="td1"></td>
+      <td id="td1">Service Modification</td>
+      <td id="td1">Monitor for changes to system processes that do not correlate with known software, patch cycles, etc., including by comparing results against a trusted system baseline.</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1">DS0024</td>
+      <td id="td1">Windows Registry</td>
+      <td id="td1">Windows Registry Key Creation</td>
+      <td id="td1">Monitor for newly constructed windows registry keys that may create or modify system-level processes to repeatedly execute malicious payloads as part of persistence.</td>
+    </tr>
+    <tr id="tr1">
+      <td id="td1"></td>
+      <td id="td1"></td>
+      <td id="td1">Windows Registry Key Modification</td>
+      <td id="td1">Monitor for changes to windows registry keys and/or values that may create or modify system-level processes to repeatedly execute malicious payloads as part of persistence.</td>
+    </tr>
+  </table>
+
+    
+</body>
+
+
+               
+</html>
